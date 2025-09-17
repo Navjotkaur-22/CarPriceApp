@@ -3,3 +3,4 @@ pandas
 numpy<2.0,>=1.22
 scikit-learn
 joblib
+cloudpickle
