@@ -11,7 +11,7 @@ st.markdown(
     "Upload a CSV with the same feature columns used during training, or use the manual form for a single estimate."
 )
 
-MODEL_PATH = "car_price_pipeline.pkl"
+MODEL_PATH = "car_priceapp/model.pkl"
 
 # Load model
 if not os.path.exists(MODEL_PATH):
