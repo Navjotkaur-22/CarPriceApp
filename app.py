@@ -17,6 +17,16 @@ MODEL_PATH = "car_price_pipeline.pkl"
 if not os.path.exists(MODEL_PATH):
     st.error(f"Model file not found: {MODEL_PATH}. Please put 'car_price_pipeline.pkl' in the app folder.")
     st.stop()
+import os
+MODEL_PATH = "path/to/your/model.pkl"  # keep your existing variable name
+
+# debug prints — Streamlit logs will show these
+print("MODEL_PATH:", MODEL_PATH)
+print("Exists:", os.path.exists(MODEL_PATH))
+print("CWD:", os.getcwd())
+print("Files in /mount/src/carpriceapp:", os.listdir("/mount/src/carpriceapp"))
+# optionally list root of the repo:
+print("Files root:", os.listdir("."))
 
 pipeline = joblib.load(MODEL_PATH)
 
