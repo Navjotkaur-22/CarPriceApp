@@ -66,17 +66,24 @@ else:
     fuel_type = st.selectbox("Fuel Type", ["gas","diesel"])
     aspiration = st.selectbox("Aspiration", ["std","turbo"])
     num_of_doors = st.selectbox("Num of doors", ["four","two","unknown"])
-    body_style = st.selectbox("Body Style", ["hardtop","wagon","sedan","hatchback","convertible"])
-    drive_wheels = st.selectbox("Drive Wheels", ["4wd","fwd","rwd"])
-    engine_location = st.selectbox("Engine Location", ["front","rear"])
+    st.write("Use the manual form to give a quick single estimate. (If you get errors about missing columns, use CSV mode.)")
+# NOTE: Adjust these fields if your pipeline expects differently
+make = st.selectbox("Make", sorted([...]))
+fuel_type = st.selectbox("Fuel Type", [...])
+aspiration = st.selectbox("Aspiration", [...])
+num_of_doors = st.selectbox("Number of doors", [...])
+body_style = st.selectbox("Body style", [...])
+drive_wheels = st.selectbox("Drive Wheels", [...])
+...
 
-    wheel_base = st.number_input("Wheel Base", min_value=0.0, value=95.0)
-    length = st.number_input("Length", min_value=0.0, value=170.0)
-    width = st.number_input("Width", min_value=0.0, value=65.0)
-    height = st.number_input("Height", min_value=0.0, value=50.0)
-    curb_weight = st.number_input("Curb Weight", min_value=0, value=2000)
-    engine_size = st.number_input("Engine Size", min_value=0, value=100)
-    horsepower = st.number_input("Horsepower", min_value=0, value=100)
+    
+
+
+    
+    
+    
+    
+    
     city_mpg = st.number_input("City MPG", min_value=0, value=20)
     highway_mpg = st.number_input("Highway MPG", min_value=0, value=25)
 
