@@ -1,6 +1,6 @@
 streamlit
 pandas
 numpy<2.0,>=1.22
-scikit-learn
+scikit-learn==1.6.1
 joblib
 cloudpickle
