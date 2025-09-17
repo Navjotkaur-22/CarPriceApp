@@ -18,18 +18,20 @@ MODEL_PATH = "car_price_pipeline.pkl"
 if not os.path.exists(MODEL_PATH):
     st.error(f"Model file not found: {MODEL_PATH}. Please put 'car_price_pipeline.pkl' in the app folder.")
     st.stop()
+# --- debug block start ---
 import os
-MODEL_PATH = "path/to/your/model.pkl"  # keep your existing variable name
 
-# debug prints — Streamlit logs will show these
-print("MODEL_PATH:", MODEL_PATH)
-print("Exists:", os.path.exists(MODEL_PATH))
-print("CWD:", os.getcwd())
-print("Files in /mount/src/carpriceapp:", os.listdir("/mount/src/carpriceapp"))
-# optionally list root of the repo:
-print("Files root:", os.listdir("."))
+print("DEBUG >>> Current Working Directory:", os.getcwd())
+print("DEBUG >>> Files in CWD:", os.listdir("."))
+print("DEBUG >>> Files in parent:", os.listdir(".."))
+print("DEBUG >>> MODEL_PATH:", MODEL_PATH)
+print("DEBUG >>> Exists?:", os.path.exists(MODEL_PATH))
+# --- debug block end ---
 
 pipeline = joblib.load(MODEL_PATH)
+
+
+
 
 st.sidebar.header("Mode")
 mode = st.sidebar.radio("Choose mode", ["Batch (CSV upload)", "Single input (form)"])
