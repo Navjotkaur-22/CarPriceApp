@@ -19,16 +19,21 @@ if not os.path.exists(MODEL_PATH):
     st.error(f"Model file not found: {MODEL_PATH}. Please put 'car_price_pipeline.pkl' in the app folder.")
     st.stop()
 # --- debug block start ---
-import os
+import os, cloudpickle
+
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "car_price_pipeline.pkl")
 
 print("DEBUG >>> Current Working Directory:", os.getcwd())
 print("DEBUG >>> Files in CWD:", os.listdir("."))
 print("DEBUG >>> Files in parent:", os.listdir(".."))
 print("DEBUG >>> MODEL_PATH:", MODEL_PATH)
 print("DEBUG >>> Exists?:", os.path.exists(MODEL_PATH))
-# --- debug block end ---
 
-pipeline = joblib.load(MODEL_PATH)
+with open(MODEL_PATH, "rb") as f:
+    pipeline = cloudpickle.load(f)
+
+
+
 
 
 
