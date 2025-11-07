@@ -4,9 +4,8 @@ An interactive **Machine Learning Web App** built with **Streamlit**, that predi
 This project showcases an **end-to-end Data Science workflow** — from data preprocessing and model training to live deployment with a CSV-first user interface.
 
 🌐 Live Demo  
-👉 [Car Price Prediction – Streamlit App](https://carpriceapp-vajabjeanhumcu5gyqhehn.streamlit.app/)
+👉 [Car Price Prediction – Streamlit App](https://carpriceapp-vajabjeanhumcu5gyqhehn.streamlit.app/) &nbsp;&nbsp; [![Launch App](https://img.shields.io/badge/OPEN%20APP-black?style=for-the-badge&logo=streamlit)](https://carpriceapp-vajabjeanhumcu5gyqhehn.streamlit.app/)
 
-[![Launch App](https://img.shields.io/badge/OPEN%20APP-black?style=for-the-badge&logo=streamlit)](https://carpriceapp-vajabjeanhumcu5gyqhehn.streamlit.app/)
 
 🧠 Project Overview  
 This application allows users to:
