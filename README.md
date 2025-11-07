@@ -76,9 +76,7 @@ streamlit run app.py
 📍 Jalandhar, Punjab, India
 
 🌐 Connect with me:
+💼 [GitHub – Navjotkaur-22](https://github.com/Navjotkaur-22)
+🔗 [LinkedIn – Navjot Kaur](https://www.linkedin.com/in/navjot-kaur-b61aab299/)
+💬 [Upwork – Navjot Kaur](https://www.upwork.com/freelancers/~01b30aa09d478b524c)
 
-💼 GitHub – Navjotkaur-22
-
-🔗 LinkedIn – Navjot Kaur
-
-💬 Upwork – Navjot Kaur
